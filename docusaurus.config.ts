@@ -18,6 +18,7 @@ const config: Config = {
   organizationName: 'weiyilee17', // Usually your GitHub org/user name.
   projectName: 'learning-notes.github.io', // Usually your repo name.
   trailingSlash: false,
+  deploymentBranch: 'main',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
