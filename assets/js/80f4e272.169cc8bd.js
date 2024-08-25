@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus_practice=self.webpackChunkdocusaurus_practice||[]).push([[6219],{4934:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/learning-notes/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
