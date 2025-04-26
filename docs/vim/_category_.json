@@ -1,0 +1,8 @@
+{
+  "label": "Vim",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Vim is a text editor that provides a rich set of features for editing text files."
+  }
+}

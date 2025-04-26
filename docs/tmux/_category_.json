@@ -1,0 +1,8 @@
+{
+  "label": "Tmux",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Tmux is a terminal multiplexer. It allows you to run multiple terminal sessions in a single terminal window, plus a bunch of other useful features."
+  }
+}

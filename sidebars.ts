@@ -18,8 +18,28 @@ const sidebars: SidebarsConfig = {
   notesSidebar: [
     {
       type: 'category',
-      label: 'Notes',
+      label: 'Fastify',
       items: ['fastify/setup', 'fastify/routes', 'fastify/validation', 'fastify/database'],
+    },
+    {
+      type: 'category',
+      label: 'Tmux',
+      items: ['tmux/commands'],
+    },
+    {
+      type: 'category',
+      label: 'Vim',
+      items: ['vim/keybindings'],
+    },
+    {
+      type: 'category',
+      label: 'Lua',
+      items: ['lua/basics', 'lua/control-flow'],
+    },
+    {
+      type: 'category',
+      label: 'Linux',
+      items: ['linux/commands'],
     },
   ],
 };

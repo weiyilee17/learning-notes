@@ -1,0 +1,8 @@
+{
+  "label": "Lua",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "description": "Lua is the language used for neovim's plugins and love2d."
+  }
+}
