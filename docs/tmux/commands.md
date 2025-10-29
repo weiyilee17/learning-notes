@@ -5,11 +5,12 @@ remapped Leader to <kbd>Ctrl</kbd> + <kbd>s</kbd> in .tmux.conf
 
 - Leader + <kbd>c</kbd> = Create a new window
 - Leader + <kbd>n</kbd> = Move to next window
+- Leader + <kbd>p</kbd> = Move to previous window
 - Leader + <kbd>1</kbd> = Move to window 1
 - Leader + <kbd>%</kbd> = Split window vertically,
-  into left and right pane
+  into left and right pane (re-bind to |)
 - Leader + <kbd>"</kbd> = Split window horizontally,
-  into top and bottom pane
+  into top and bottom pane (re-bind to -)
 
 - Leader + arrow to navigate between panes
 
@@ -32,11 +33,21 @@ config at ~/.tmux.conf\
 after adding r rebind in .tmux.conf,
 Leader + <kbd>r</kbd> = reload tmux config file
 
-- Leader + h, j, k, l = Leader + arrow after rebind in config file
-
 - Leader + <kbd>I</kbd> = Install plugins listed in tmux plugin manager(tpm)
 
 Plugins are in ~/.tmux/plugins
+
+## Copy mode
+
+- Leader + <kbd>[</kbd> = Enter copy mode (or scroll)
+
+- Can use vim motions to navigate
+- <kbd>shift</kbd> + <kbd>j, k</kbd> to keep cursor in same position
+- Can use <kbd>v</kbd>, <kbd>y</kbd> to highlight, copy, just like vim
+
+- <kbd>Ctrl</kbd> + <kbd>u, d</kbd> to go up or down half page
+- <kbd>Ctrl</kbd> + <kbd>b, f</kbd> to go up or down full page
+- <kbd>Ctrl</kbd> + <kbd>c</kbd> to exit copy mode
 
 ## terminal with fzf, not tmux specific
 

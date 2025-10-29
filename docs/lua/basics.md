@@ -137,7 +137,7 @@ print('function() end:', t[function() end])
 
 ```
 
-## Syntax suger
+## Syntax sugar
 
 ```lua
 local myTable = {}

@@ -16,6 +16,18 @@
 - <kbd>Ctrl</kbd> + <kbd>r</kbd> = redo
   (like <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>z</kbd>)
 - <kbd>Ctrl</kbd> + <kbd>-</kbd> = go to previous file
+- <kbd>f</kbd> + <kbd>{char}</kbd> = find char
+- - <kbd>;</kbd> = find next char
+- - <kbd>,</kbd> = find prev char
+
+- <kbd>e</kbd> = go to end of word
+- <kbd>g</kbd> + <kbd>e</kbd> = go to previous end of word
+
+- <kbd>D</kbd> = <kbd>d$</kbd>
+- <kbd>Y</kbd> = <kbd>y$</kbd>
+
+- <kbd>}</kbd> = go to next empty line
+- <kbd>{</kbd> = go to previous empty line
 
 - <kbd>Ctrl</kbd> + <kbd>g</kbd> + <kbd>d</kbd> = go to definition
 - <kbd>Ctrl</kbd> + <kbd>g</kbd> + <kbd>r</kbd> = go to reference
@@ -32,9 +44,34 @@
 - <kbd>cgn</kbd> = change this match
 - <kbd>Esc</kbd> + <kbd>n</kbd> + <kbd>.</kbd> = repeat on next match
 
-when cursor on `{`
+- <kbd>:</kbd> + <kbd>%s</kbd> + <kbd>/String to search</kbd> + \
+  <kbd>/String to replace</kbd> + <kbd>/g</kbd> = find and replace all in file
+
+- <kbd>:%s/\n//g</kbd> = find and replace all \n in file so it turns to be one line
+- <kbd>:1,$join!</kbd> = same
+
+- <kbd>dd</kbd> = delete current line
+- <kbd>cc</kbd> = remove current line, and enter insert mode
+
+when cursor on `{` or `(` or `[`
 
 - <kbd>%</kbd> = move cursor to closing counterpart
+
+when in between ex. (param: typeOfParam), can type \
+`])` to go to the next unmatched `)`
+`[(` to go to the previous unmatched `(`
+
+- <kbd>H</kbd> = cursor to top(high)
+- <kbd>M</kbd> = cursor to middle
+- <kbd>L</kbd> = cursor to bottom(low)
+
+- <kbd>z</kbd> + <kbd>z</kbd> = center current line
+- <kbd>z</kbd> + <kbd>t</kbd> = put cursor to top(like zz, then scroll till \
+  cursor is in 1st line)
+- <kbd>z</kbd> + <kbd>b</kbd> = put cursor to bottom (like zz, then scroll till \
+  cursor is in last line)
+- <kbd>Ctrl</kbd> + <kbd>e</kbd> = scroll down
+- <kbd>Ctrl</kbd> + <kbd>y</kbd> = scroll up
 
 - <kbd>shift</kbd> + <kbd>k</kbd> = show type definition
 
@@ -42,6 +79,15 @@ Ex.
 
 - <kbd>c</kbd> + <kbd>i</kbd> + <kbd>w</kbd> = change in word
 - <kbd>y</kbd> + <kbd>a</kbd> + <kbd>p</kbd> = yank around paragraph
+- <kbd>y</kbd> + <kbd>f</kbd> + <kbd>(</kbd> = yank to and include (
+
+- <kbd>d</kbd> + <kbd>i</kbd> + <kbd>p</kbd> = delete in paragraph
+- <kbd>d</kbd> + <kbd>i</kbd> + <kbd>(</kbd> = delete in parenthesis \
+  (parenthesis excluded)
+- <kbd>d</kbd> + <kbd>a</kbd> + <kbd>(</kbd> = delete around parenthesis \
+  (parenthesis included)
+- <kbd>y</kbd> + <kbd>i</kbd> + <kbd>p</kbd> = yank in paragraph
+
 - <kbd>n</kbd> = go to next match
 - <kbd>.</kbd> = replay what is done previously
 
@@ -61,6 +107,22 @@ Ex.
 - `s/previous/next/gc` = substitute previous to next globally and needs confirm
 
 So the above combo replaces all string previous to string next, and asks user confirmation
+
+## surround
+
+- <kbd>ys</kbd> + <kbd>motion</kbd> + <kbd>surround character</kbd> \
+  = put the surround character around text
+
+ex.
+
+- <kbd>ys</kbd> + <kbd>iw</kbd> + <kbd>"</kbd> \
+  = surround text with ""
+
+- <kbd>ds</kbd> + <kbd>"</kbd> \
+  = delete surrounding ""
+
+- <kbd>cs</kbd> + <kbd>"</kbd> + <kbd>'</kbd> \
+  = change surrounding from "" to ''
 
 ## Registers
 
